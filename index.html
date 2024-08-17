@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Hamza Ghafoor is a professional Software-Developer creating valuable solutions" name="description">
+    <title>Hamza | Software-Developer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet">
+    <link href="https://webchat-styler-css.botpress.app/prod/5f8d82e0-77ea-43d5-bb95-3d151f72856f/v49714/style.css" rel="stylesheet">
+</head>
+<style>
+     @media (max-width:800px ) or (max-width:360px) {
+            /* Write your code here */
+            .logo-class {
+                height: 40px;
+            }
+
+            .local-container {
+                display: flex;
+                flex-direction: column;
+                place-items: center;
+                margin-left: 20px;
+                margin-right: 20px;
+                gap: 10px
+            }
+
+            .center {
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%
+            }
+            
+            .sum-container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(4, 1fr);
+                gap: 10px;
+            }
+
+            .hero-title {
+                color: #fff; 
+                font-size: 35px;
+                font-family: 'General Sans', sans-serif;
+                margin-bottom: 0;
+            }
+
+            .hero-subtitle {
+                color: rgb(155, 161, 166); 
+                font-size: 18px;
+                font-family: 'General Sans', sans-serif;
+            }
+
+            .local-card-wrapper { 
+                position: relative; /**/
+                padding: 2px;
+                border-radius: 15px;
+                background: rgba(145, 145, 145, 0.2);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                overflow: hidden;
+            }
+
+            .local-card {
+                position: relative; /**/
+                padding:2.5rem;
+                border-radius: 15px;
+                background-color: rgb(29, 29, 29);
+                
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+            }
+
+            .local-card-pfp {
+                position: relative; /**/
+                padding: 1.5rem;
+                border-radius: 15px;
+                background-color: rgb(29, 29, 29);
+
+                display: flex;
+                height: 100%;
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .social-icon {
+                height: 50px;
+                width: 50px;
+            }
+
+            .local-download-card {
+                position: relative;
+                padding: 2.5rem;
+                border-radius: 15px;
+                background-color: rgb(29, 29, 29);
+
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .local-card-border { /**/
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: 5pxpx solid #ddd; 
+            }
+
+            .item1 {
+                grid-row: span 2;
+                grid-column: span 2;
+                overflow: hidden;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-row-gap: 1.5rem;
+            }
+
+            .card-title-big {
+                letter-spacing: -2px;
+            }
+
+            .card-title-medium {
+                color: #fff; 
+                font-size: 20px;
+                font-family: 'General Sans', sans-serif;
+                font-weight: 500;
+                margin: 0;
+                line-height: 1;
+            }
+
+            .card-title-small {
+                color: rgb(116, 116, 116); 
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+                line-height: 1;
+                font-family: 'General Sans', sans-serif;
+            }
+
+            .proj-container {
+                display: flex;
+                flex-direction: column;
+
+                width: 100%;
+            }
+
+            .item1 {
+                grid-row: span 2;
+                grid-column: span 2;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .skills-row-flex {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-row: 1fr;
+                gap: 10px;
+                width: 100%;
+            }
+            
+        }
+</style>
+<body >
+    <nav class="navbar navbar-dark bg-black fixed-top" style="background-image:  radial-gradient(circle at 24.1% 68.8%, rgb(15, 15, 15) 0%, rgb(0, 0, 0) 99.4%) !important;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/hzg4 logo.png" class="logo-class">
+          </a>
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header" style="margin-top: 20px; margin-right: 50px;">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <p class="text-outline text-outline-hover" data-text="PROJECTS">PROJECTS</p></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <p class="text-outline text-outline-hover" data-text="RESOURCES">RESOURCES</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    <p class="text-outline text-outline-hover" data-text="CONTACT">CONTACT</p></a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="local-center" style="margin-top: 100px;">
+    <div class="local-container">
+        <div>
+            <h1 class="hero-title">Hi, I'm Hamza</h1>
+            <p class="hero-subtitle">Software-Developer based in Pakistan.</p>
+        </div>
+        <div class="sum-container">
+            <div class="local-card-wrapper item1" data-tilt-max="10" data-tilt-reverse="true">
+                <div class="local-card-pfp " >
+                    <div class="image-container">
+                        <img src="./images/website-photo.jpg" alt="Profile Image">
+                    </div>
+                    <div class="social-wrapper">
+                      <a href="https://github.com/HZG4">
+                        <div class="social-icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo 1">
+                        </div>
+                      </a>
+                      <a href="https://www.linkedin.com/in/hamza-ghafoor-a2247022a/">
+                        <div class="social-icon">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRzPMR9ghDd16qcaPWm6WZBtBTyRdkHNonGQ&s" alt="Logo 2">
+                        </div>
+                      </a>
+                      <a href="https://x.com/mhamzaghafoor">
+                        <div class="social-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/300px-X_logo_2023.svg.png" alt="Logo 3">
+                        </div>
+                      </a>
+                      <a href="https://www.kaggle.com/hamzaghafoor">
+                        <div class="social-icon">
+                            <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands-1/512/189_Kaggle_logo_logos-512.png" alt="Logo 4">
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="blob"></div>
+                <div class="fakeblob"></div>    
+            </div>
+
+            <div class="local-card-wrapper" data-tilt-max="15" data-tilt-reverse="true">
+                <div class="local-card">
+                    <h2 class="card-title-medium">Fellow</h2>
+                    <p class="card-title-small">headstarter.co</p>
+                </div>
+                <div class="blob"></div>
+                <div class="fakeblob"></div> 
+            </div>
+            
+            <div class="local-card-wrapper" data-tilt-max="15" data-tilt-reverse="true">
+                <div class="local-card">
+                    <p class="card-title-small">Certified</p>
+                    <h2 class="card-title-medium">Data Scientist</h2>
+                </div> 
+                <div class="blob"></div>
+                <div class="fakeblob"></div>    
+            </div>
+            
+            <div class="local-card-wrapper" data-tilt-max="15" data-tilt-reverse="true">
+                <a href="./resume.pdf" style="text-decoration: none;" class="local-download-card clickable rotate-on-hover">
+                    <div class="flex-column-text">
+                        <h2 class="card-title-medium">Download</h2>
+                        <h2 class="card-title-medium" style="text-align: left;">Resume</h2>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                        <path fill="#ffffffb9" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                    </svg>
+                </a>     
+                <div class="blob"></div>
+                <div class="fakeblob"></div>     
+            </div>
+
+            <div class="local-card-wrapper" data-tilt-max="15" data-tilt-reverse="true">
+                <div class="local-card">
+                    <h2 class="card-title-big">2 <span class="title-span-small">years</span>
+                    </h2>
+                    <h2 class="card-title-small">Experience</h2>
+                </div>
+                <div class="blob"></div>
+                <div class="fakeblob"></div> 
+            </div>
+        </div>
+
+        <div class="proj-container">
+            <div class="local-card-wrapper" data-tilt-max="7" data-tilt-reverse="true">
+                <div class="local-card-proj clickable rotate-on-hover">
+                    <div class="padding-part">
+                    <!-- Add a row flexbox with two item heading and button  -->
+                     <div class="proj-card-top-flex">
+                        <div class="proj-title-flex"> 
+                            <svg height="20" width="20" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2217 8.93569C18.3449 9.05883 18.4086 9.23128 18.3989 9.4151C18.3893 9.59893 18.307 9.77907 18.1701 9.91589L9.9158 18.1702C9.77897 18.3071 9.59884 18.3894 9.41501 18.399C9.23119 18.4087 9.05874 18.345 8.9356 18.2218L0.578075 9.8643C0.454933 9.74116 0.391188 9.56871 0.400863 9.38488C0.410538 9.20106 0.49284 9.02092 0.629665 8.8841L8.88401 0.629756C9.02083 0.492931 9.20097 0.410629 9.38479 0.400954C9.56862 0.391279 9.74107 0.455024 9.86421 0.578166L18.2217 8.93569ZM8.4197 9.45158L5.16955 6.20144L2.07417 9.29681L5.32432 12.547L8.4197 9.45158ZM12.5985 13.6303L9.34831 10.3802L6.25293 13.4756L9.50308 16.7257L12.5985 13.6303ZM12.5469 5.32441L9.29672 2.07427L6.20134 5.16964L9.45149 8.41979L12.5469 5.32441ZM16.7256 9.50317L13.4755 6.25303L10.3801 9.3484L13.6303 12.5986L16.7256 9.50317Z" fill="#ffffffb7"></path>
+                            </svg>
+                            <h1 class="proj-title-medium">Project1</h1>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill="#ffffffb9" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                     </div>
+                     <div class="proj-card-bot-flex">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Python</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>SQL</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Power BI</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Tensorflow</button>
+                     </div>
+                    </div>
+                    <!-- Add a flexbox with each flexitem having a round border for tool -->
+                    <div class="proj-image-container">
+                        <img src="./images/placeholder-image.webp" height="100%" alt="Profile Image">
+                    </div>
+                </div> 
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+
+            <div class="local-card-wrapper" data-tilt-max="7" data-tilt-reverse="true">
+                <div class="local-card-proj clickable rotate-on-hover">
+                    <div class="padding-part">
+                    <!-- Add a row flexbox with two item heading and button  -->
+                     <div class="proj-card-top-flex">
+                        <div class="proj-title-flex"> 
+                            <svg height="20" width="20" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2217 8.93569C18.3449 9.05883 18.4086 9.23128 18.3989 9.4151C18.3893 9.59893 18.307 9.77907 18.1701 9.91589L9.9158 18.1702C9.77897 18.3071 9.59884 18.3894 9.41501 18.399C9.23119 18.4087 9.05874 18.345 8.9356 18.2218L0.578075 9.8643C0.454933 9.74116 0.391188 9.56871 0.400863 9.38488C0.410538 9.20106 0.49284 9.02092 0.629665 8.8841L8.88401 0.629756C9.02083 0.492931 9.20097 0.410629 9.38479 0.400954C9.56862 0.391279 9.74107 0.455024 9.86421 0.578166L18.2217 8.93569ZM8.4197 9.45158L5.16955 6.20144L2.07417 9.29681L5.32432 12.547L8.4197 9.45158ZM12.5985 13.6303L9.34831 10.3802L6.25293 13.4756L9.50308 16.7257L12.5985 13.6303ZM12.5469 5.32441L9.29672 2.07427L6.20134 5.16964L9.45149 8.41979L12.5469 5.32441ZM16.7256 9.50317L13.4755 6.25303L10.3801 9.3484L13.6303 12.5986L16.7256 9.50317Z" fill="#ffffffb7"></path>
+                            </svg>
+                            <h1 class="proj-title-medium">Project2</h1>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill="#ffffffb9" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                     </div>
+                     <div class="proj-card-bot-flex">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Python</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>SQL</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Power BI</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Tensorflow</button>
+                     </div>
+                    </div>
+                    <!-- Add a flexbox with each flexitem having a round border for tool -->
+                    <div class="proj-image-container">
+                        <img src="./images/placeholder-image.webp" height="100%" alt="Profile Image">
+                    </div>
+                </div> 
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+
+            <div class="local-card-wrapper" data-tilt-max="7" data-tilt-reverse="true">
+                <div class="local-card-proj clickable rotate-on-hover">
+                    <div class="padding-part">
+                    <!-- Add a row flexbox with two item heading and button  -->
+                     <div class="proj-card-top-flex">
+                        <div class="proj-title-flex"> 
+                            <svg height="20" width="20" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2217 8.93569C18.3449 9.05883 18.4086 9.23128 18.3989 9.4151C18.3893 9.59893 18.307 9.77907 18.1701 9.91589L9.9158 18.1702C9.77897 18.3071 9.59884 18.3894 9.41501 18.399C9.23119 18.4087 9.05874 18.345 8.9356 18.2218L0.578075 9.8643C0.454933 9.74116 0.391188 9.56871 0.400863 9.38488C0.410538 9.20106 0.49284 9.02092 0.629665 8.8841L8.88401 0.629756C9.02083 0.492931 9.20097 0.410629 9.38479 0.400954C9.56862 0.391279 9.74107 0.455024 9.86421 0.578166L18.2217 8.93569ZM8.4197 9.45158L5.16955 6.20144L2.07417 9.29681L5.32432 12.547L8.4197 9.45158ZM12.5985 13.6303L9.34831 10.3802L6.25293 13.4756L9.50308 16.7257L12.5985 13.6303ZM12.5469 5.32441L9.29672 2.07427L6.20134 5.16964L9.45149 8.41979L12.5469 5.32441ZM16.7256 9.50317L13.4755 6.25303L10.3801 9.3484L13.6303 12.5986L16.7256 9.50317Z" fill="#ffffffb7"></path>
+                            </svg>
+                            <h1 class="proj-title-medium">Project3</h1>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill="#ffffffb9" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                     </div>
+                     <div class="proj-card-bot-flex">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Python</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>SQL</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Power BI</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Tensorflow</button>
+                     </div>
+                    </div>
+                    <!-- Add a flexbox with each flexitem having a round border for tool -->
+                    <div class="proj-image-container">
+                        <img src="./images/placeholder-image.webp" height="100%" alt="Profile Image">
+                    </div>
+                </div> 
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+
+            <div class="local-card-wrapper" data-tilt-max="7" data-tilt-reverse="true">
+                <div class="local-card-proj clickable rotate-on-hover">
+                    <div class="padding-part">
+                    <!-- Add a row flexbox with two item heading and button  -->
+                     <div class="proj-card-top-flex">
+                        <div class="proj-title-flex"> 
+                            <svg height="20" width="20" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.2217 8.93569C18.3449 9.05883 18.4086 9.23128 18.3989 9.4151C18.3893 9.59893 18.307 9.77907 18.1701 9.91589L9.9158 18.1702C9.77897 18.3071 9.59884 18.3894 9.41501 18.399C9.23119 18.4087 9.05874 18.345 8.9356 18.2218L0.578075 9.8643C0.454933 9.74116 0.391188 9.56871 0.400863 9.38488C0.410538 9.20106 0.49284 9.02092 0.629665 8.8841L8.88401 0.629756C9.02083 0.492931 9.20097 0.410629 9.38479 0.400954C9.56862 0.391279 9.74107 0.455024 9.86421 0.578166L18.2217 8.93569ZM8.4197 9.45158L5.16955 6.20144L2.07417 9.29681L5.32432 12.547L8.4197 9.45158ZM12.5985 13.6303L9.34831 10.3802L6.25293 13.4756L9.50308 16.7257L12.5985 13.6303ZM12.5469 5.32441L9.29672 2.07427L6.20134 5.16964L9.45149 8.41979L12.5469 5.32441ZM16.7256 9.50317L13.4755 6.25303L10.3801 9.3484L13.6303 12.5986L16.7256 9.50317Z" fill="#ffffffb7"></path>
+                            </svg>
+                            <h1 class="proj-title-medium">Project4</h1>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="#fff" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill="#ffffffb9" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                     </div>
+                     <div class="proj-card-bot-flex">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Python</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>SQL</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Power BI</button>
+                        <button type="button" class="btn btn-outline-secondary btn-sm" disabled>Tensorflow</button>
+                     </div>
+                    </div>
+                    <!-- Add a flexbox with each flexitem having a round border for tool -->
+                    <div class="proj-image-container">
+                        <img src="./images/placeholder-image.webp" height="100%" alt="Profile Image">
+                    </div>
+                </div> 
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+        </div>
+
+        <div class="skills-container">
+            <div class="local-card-wrapper" data-tilt-max="5" data-tilt-reverse="true">
+                <div class="local-skills-card">
+                    <div class="skills-title-medium">SKILLS</div>
+                </div>
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+
+            <div class="skills-row-flex">
+                <div class="local-card-wrapper" data-tilt-max="8" data-tilt-reverse="true">
+                    <div class="local-skills-card">
+                        <div class="skills-item">
+                            <div class="skills-item-text">
+                              <span>Python</span>
+                              <span>85%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar w-85"></div>
+                            </div>
+                          </div>
+                  
+                          <div class="skills-item">
+                            <div class="skills-item-text">
+                              <span>SQL</span>
+                              <span>90%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar w-90"></div>
+                            </div>
+                          </div>
+                  
+                          <div class="skills-item">
+                            <div class="skills-item-text">
+                              <span>Power BI</span>
+                              <span>80%</span>
+                            </div>
+                            <div class="progress">
+                              <div class="progress-bar w-80"></div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="blob"></div>
+                    <div class="fakeblob"></div>
+                </div>
+                <div class="local-card-wrapper" data-tilt-max="8" data-tilt-reverse="true">
+                    <div class="local-skills-card">
+                        <div>
+                            <div class="skills-item">
+                              <div class="skills-item-text">
+                                <span>Python</span>
+                                <span>85%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-85"></div>
+                              </div>
+                            </div>
+                    
+                            <div class="skills-item">
+                              <div class="skills-item-text">
+                                <span>SQL</span>
+                                <span>90%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-90"></div>
+                              </div>
+                            </div>
+                    
+                            <div class="skills-item">
+                              <div class="skills-item-text">
+                                <span>Power BI</span>
+                                <span>80%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress-bar w-80"></div>
+                              </div>
+                            </div>
+                    
+                          </div>
+                    </div>
+                    <div class="blob"></div>
+                    <div class="fakeblob"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edu-container"> 
+            <div class="local-card-wrapper" data-tilt-max="3" data-tilt-reverse="true">
+                <div class="local-edu-card">
+                    <div class="flex-start-heading">
+                        <div class="tag-title">
+                            <h2 class="edu-title-medium">Education</h2>
+                        </div>
+                    </div>
+                    <hr class="style-one">
+                    <div style="width: 100%;">
+                        <ul>
+                            <li class="timeline-item">
+                                <div class="skills-item-text">
+                                    <h2 class="edu-title-medium">Georgia Institute of Technology</h2>
+                                    <span style="font-size: 15px; color: #ffffffa1;">2026 — 2028</span>
+                                </div>
+                                <p class="edu-title-small">
+                                  Master of Science in Computer Science (MSCS) <br>
+                                  Specialization in Machine Learning 
+                                </p>
+                            </li>
+                            <hr style="border-style: none;
+                                border-top-style: dotted;
+                                border-color: lightgrey;
+                                border-width: 95%;
+                                margin-top: 30px;
+                                width: 95%;">
+                            <li class="timeline-item">
+                                <div class="skills-item-text">
+                                    <h2 class="edu-title-medium">COMSATS University Islamabad</h2>
+                                    <span style="font-size: 15px; color: #ffffffa1;">2022 — 2026</span>
+                                </div>
+                                <p class="edu-title-small">
+                                  Bachelor of Science in Computer Science (BSCS) <br>
+                                  Talent Hunt Scholar 
+                                </p>
+                            </li>
+                            <hr style="border-style: none;
+                                border-top-style: dotted;
+                                border-color: lightgrey;
+                                border-width: 95%;
+                                margin-top: 30px;
+                                width: 95%;">
+                            <li class="timeline-item">
+                                <div class="skills-item-text">
+                                    <h2 class="edu-title-medium">Divisional Public School & College</h2>
+                                    <span style="font-size: 15px; color: #ffffffa1;">2013 — 2021</span>
+                                </div>
+                                <p class="edu-title-small">
+                                  Higher Secondary School Education (HSSE) <br>
+                                  Faculty of Science Biology 
+                                </p>
+                            </li>
+                            <hr style="border-style: none;
+                                border-top-style: dotted;
+                                border-color: lightgrey;
+                                border-width: 95%;
+                                margin-top: 30px;
+                                width: 95%;">
+                        </ul>
+                    </div>
+                </div>
+                <div class="blob"></div>
+                <div class="fakeblob"></div>
+            </div>
+        </div>
+       
+        <div class="container">
+            <footer class="py-3 my-4">
+              <ul class="nav justify-content-center pb-3 mb-3 mt-5">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+                <li class="nav-item"><a href="./pages/projects.html" class="nav-link px-2 text-light">Projects</a></li>
+                <li class="nav-item"><a href="./pages/resources.html" class="nav-link px-2 text-light">Resources</a></li>
+                <li class="nav-item"><a href="./pages/contact.html" class="nav-link px-2 text-light">Contact</a></li>
+              </ul>
+              <p class="text-center text-light">All right reserved | Hamza © 2024</p>
+            </footer>
+          </div>
+
+
+    </div>
+</div>
+<script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".local-card-wrapper"), {
+		speed: 300
+	});
+
+    VanillaTilt.init(document.querySelectorAll(".local-card-wrapper"));
+</script>
+<script src="./js/shine.js"></script>
+<script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/0fce6322-1e1a-471e-ba37-3e24f6561f31/webchat/config.js" defer></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
