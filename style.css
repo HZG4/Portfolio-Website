@@ -255,6 +255,7 @@
         font-weight: 500;
         margin: 0;
         line-height: 1;
+        letter-spacing: 1px;
         text-align: center;
     }
 
@@ -447,10 +448,10 @@
     }
 
     .skills-title-medium {
-        color: #ffffffb9; 
-        font-weight: 500; 
-        margin:0; 
-        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+        margin: 0;
+        font-size: 25px;
         font-family: 'General Sans', sans-serif;
         line-height: 1;
     }
