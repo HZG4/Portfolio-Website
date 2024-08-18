@@ -595,3 +595,9 @@
     .ConfirmDialogContainer_43be06>div .bp3-button.bp3-intent-warning {
         background-color: #7518b7 !important;
     }
+
+    .navbar-nav {
+    --bs-nav-link-color: rgb(255 255 255) !important;
+    --bs-nav-link-hover-color: rgb(255 255 255) !important;
+    --bs-nav-link-disabled-color: rgb(255 255 255) !important;
+    }
